@@ -15,12 +15,26 @@ The Firewall Manager v2 BETA is a new tool within the MyRackspace portal. This a
 
 ### What is the Firewall Manager?
 
-The Firewall Manager, or also commonly referred to as the Firewall Control Panel (FWCP), is a self-service tool built within the myRackspace portal. The Firewall Manager provides you with the ability to immediately view and make modifications to your Cisco firewall(s) by securely connecting to them and executing the change on your behalf. 
+The Firewall Manager, or also commonly referred to as the Firewall Control Panel (FWCP), is a self-service tool built within the myRackspace portal. The Firewall Manager provides you with the ability to immediately view and make modifications to the configurations of your Cisco firewall(s) by securely connecting to them and executing the change on your behalf. In many cases, the Firewall Manager can be used to execute a change in less time than it take to create a ticket.
 
 ### Firewall User Agreement
 
-Only customer contacts who have edit or write access on firewalls will be permitted to make modifications. The customer contact will also need to accept the firewall user agreement terms prior to using the FWCP for the first time and every 90 days after that.
+Rackspace requires each customer contact who attempts to use the Firewall Manager to accept the Firewall User Agreement terms. These terms are prompted for each device, every 90 days. Only customer contacts who have edit or admin permissions on firewalls will be permitted to make modifications. If the customer contact chooses not to accept the terms, that contact will only be able to view their firewall configuration.
+
+**Example 1.1 - Firewall User Agreement Example**
+<!-- IMAGE 1-->
 
 ### Firewall Manager v2 BETA
 
-The Firewall Manager v2 is a beta release for the second version of the existing Firewall Manager tool.
+The Firewall Manager v2 is a beta release for the second version of the existing Firewall Manager tool. The Firewall Manager v2 contains feature enhancements that expand the capability and supportability of your environments. 
+
+These feature enhancements include:
+ - Ability to view and update all access control lists (ACLs) inlcuding inter-segment communication
+ - Ability to update all object-groups and port-groups including groups not beginning with "FWCP-"
+ - Ability to view the change log of your firewall that includes the date, person, action, and change item
+ - Integration of the IP mapping tool to view and manage documentation of public and private IP address on servers
+ 
+ Existing features include:
+ - 
+ - Full support for High-Availability (HA) firewall(s)
+ - Full support for post-8.3 Cisco ASA software 
