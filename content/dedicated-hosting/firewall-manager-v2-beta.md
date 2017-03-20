@@ -24,6 +24,7 @@ Rackspace requires each customer contact who attempts to use the Firewall Manage
 **Example 1.1 - Firewall User Agreement Example**
 <!-- IMAGE 1-->
 
+
 ### Firewall Manager v2 Beta
 
 The Firewall Manager v2 is a beta release for the second version of the existing Firewall Manager tool. The Firewall Manager v2 contains feature enhancements that expand the capability and supportability of your environments. 
@@ -31,6 +32,7 @@ The Firewall Manager v2 is a beta release for the second version of the existing
 **These feature enhancements include the ability to:**
  - View, create, modify, or delete all access control entries within any access control lists (ACLs) inlcuding inter-segment communication
  - Reorder access control entry (ACE) lines
+ - Search through a specific access control list for keywords or ip addresses
  - Create, modify, or delete any object-group and port-group. This includes groups not beginning with "FWCP-"
  - Update VPN encryption domains
  - Integration of the IP mapping tool to view and manage documentation of public and private IP address on servers
@@ -39,9 +41,10 @@ The Firewall Manager v2 is a beta release for the second version of the existing
  - Create, modify, or delete access control entries
  - View the hit count numbers for access control entry lines
  - Add comments to access control entries
+ - Export (.csv) any of the firewall's access control lists
  - Create, modify, or delete a custom whitelist to allow traffic
  - Create, modify, or delete a custom blacklist to block traffic
- - View the change log of your firewall that includes the date, person, action, and change item
+ - View and export (.csv) the change log of your firewall that includes the date, person, action, and change item
  - Full support for High-Availability (HA) firewall(s)
  - Full support for post-8.3 Cisco ASA software 
 
