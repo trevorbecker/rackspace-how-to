@@ -52,4 +52,4 @@ The Firewall Manager v2 is a beta release for the second version of the existing
 ### Firewall Manager v2 Beta Training
 
 This section is our respository for all Firewall Manager v2 training articles. As new articles are released, links to them will be added here.
- - (In Progress - 5 articles will be completed by March 24th.)
+ - (In Progress - 5 articles will be completed by March 24th, 2017)
