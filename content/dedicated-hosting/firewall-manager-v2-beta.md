@@ -28,14 +28,14 @@ Rackspace requires each customer contact who attempts to use the Firewall Manage
 
 The Firewall Manager v2 is a beta release for the second version of the existing Firewall Manager tool. The Firewall Manager v2 contains feature enhancements that expand the capability and supportability of your environments. 
 
-##### **These feature enhancements include the ability to:**
+**These feature enhancements include the ability to:**
  - View, create, modify, or delete all access control entries within any access control lists (ACLs) inlcuding inter-segment communication
  - Reorder access control entry (ACE) lines
  - Create, modify, or delete any object-group and port-group. This includes groups not beginning with "FWCP-"
  - Update VPN encryption domains
  - Integration of the IP mapping tool to view and manage documentation of public and private IP address on servers
  
-##### **Existing features include the ability to:**
+**Existing features include the ability to:**
  - Create, modify, or delete access control entries
  - View the hit count numbers for access control entry lines
  - Add comments to access control entries
