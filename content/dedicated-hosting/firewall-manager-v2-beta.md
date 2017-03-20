@@ -48,3 +48,7 @@ The Firewall Manager v2 is a beta release for the second version of the existing
  - Full support for High-Availability (HA) firewall(s)
  - Full support for post-8.3 Cisco ASA software 
 
+### Firewall Manager v2 Beta Training
+
+This section is our respository for all Firewall Manager v2 training articles. As new articles are released, links to them will be added here.
+ - (In Progress - 5 articles will be completed by March 24th.)
