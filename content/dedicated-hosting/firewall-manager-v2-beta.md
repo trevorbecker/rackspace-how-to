@@ -1,7 +1,7 @@
 ---
-permalink: firewall-manager-v2-beta/
+permalink: firewall-manager-v2/
 audit_date:
-title: Firewall Manager v2 Beta
+title: Firewall Manager v2
 type: product
 created_date: '2017-03-20'
 created_by: Trevor Becker
@@ -12,13 +12,13 @@ product_url: dedicated-hosting
 ---
 
 <!-- IMAGE "Logo" -->
-The Firewall Manager v2 BETA is a new tool within the MyRackspace portal. This article describes the tool and also functions as the landing page for all training articles.
+The Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes the tool and also functions as the landing page for all training articles.
 
 ### What is the Firewall Manager?
 
 The Firewall Manager, or also commonly referred to as the Firewall Control Panel (FWCP), is a self-service tool built within the myRackspace portal. The Firewall Manager provides you with the ability to immediately view and make modifications to the configurations of your Cisco firewall(s) by securely connecting to them and executing the change on your behalf. In many cases, the Firewall Manager can be used to execute a change in less time than it take to create a ticket.
 
-### How do I find the Firewall Manager v2 Beta?
+### How do I find the Firewall Manager v2?
 
 1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login).
 
@@ -26,7 +26,7 @@ The Firewall Manager, or also commonly referred to as the Firewall Control Panel
 
 2. In the top navigation bar, click **Network**.
 
-3. Next, in the drop down menu, click **Firewall Manager v2 BETA**.
+3. Next, in the drop down menu, click **Firewall Manager v2**.
 
 <!--- IMAGE "Dropdown -->
 
@@ -37,9 +37,9 @@ Rackspace requires each customer contact who attempts to use the Firewall Manage
 **Example 1.1 - Firewall User Agreement Example**
 <!-- IMAGE "Firewall User Agreement"-->
 
-### Firewall Manager v2 Beta
+### Firewall Manager v2
 
-The Firewall Manager v2 is a beta release for the second version of the existing Firewall Manager tool. The Firewall Manager v2 contains feature enhancements that expand the capability and supportability of your environments. 
+The Firewall Manager v2 is the release for the second version of the existing Firewall Manager tool. The Firewall Manager v2 contains feature enhancements that expand the capability and supportability of your environments. 
 
 **These feature enhancements include the ability to**:
 
@@ -62,8 +62,8 @@ The Firewall Manager v2 is a beta release for the second version of the existing
 - Full support for High-Availability (HA) firewall(s)
 - Full support for post-8.3 Cisco ASA software 
 
-### Firewall Manager v2 Beta Training
+### Firewall Manager v2 Training
 
-<!---This section is our respository for all Firewall Manager v2 training articles. As new articles are released, links to them will be added here.--->
+This section is our respository for all Firewall Manager v2 training articles. 
 
-<!---In Progress - 5 articles will be completed by March 24th, 2017--->
+   **[Firewall Manager v2 - Object-groups](https://support.rackspace.com/how-to/firewall-manager-v2-object-groups)** 
