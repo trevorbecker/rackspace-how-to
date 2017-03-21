@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-<!-- IMAGE "Logo" -->
+<!-- IMAGE "FWCPv2 Article 2 Image Logo" -->
 The Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes the object-group feature within this tool. 
 
 Click here to learn more about the [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2).
@@ -26,7 +26,7 @@ With the example above, you can easily see the organizational and readability im
 
 ### Object-groups in the Firewall Manager v2
 
-In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You also now have the ability to view, modify, or delete any object-group on your firewall. In the previous version of the Firewall Manager, the user was restricted to only modifying object-groups that began with the string _"FWCP-"_. In this new version of the Firewall Manager, this restriction has been lifted, which enables you to more powerfully control and modify your environment.
+In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You also now have the ability to view, modify, or delete any object-group on your firewall. In the previous version of the Firewall Manager, the user was restricted to only modifying object-groups that began with the string "_FWCP-_". In this new version of the Firewall Manager, this restriction has been lifted, which enables you to more powerfully control and modify your environment.
 
 **Location of Object-groups**
 
@@ -36,7 +36,7 @@ In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You 
 
 3. Click the **IP Groups** tab on the left drop down menu.
 
-<!-- Image IP Groups --->
+<!-- Image "FWCPv2 Article 2 Image IP Group" --->
 
 ### Viewing Object-groups
 
@@ -52,9 +52,7 @@ Navigate to the **_IP Groups_** tab. Click on the **_add group_** button that is
 
 1. Type the name of the object-group in the **_Group Name_** field. 
 
-    **Rackspace Naming Scheme Best Practice**
-
-    The Rackspace standard is to use all capital letters with dashes seperating words. We recommend making the name of an object-group directly related to what access this object-group will grant. For example, if an object-group were to be used to give Walter White SSH access to the web servers, we would recommend you call this object-group WALTERWHITE-WEBSRVS-22. This object-group would then have the web server IP addresses added to it that you would like to give Walter SSH access to. Next, an access-list would be created permitting traffic from Walter's source IP address to the destination of object-group WALTERWHITE-WEBSRVS-22 over TCP port 22.
+    The Rackspace naming scheme best practice is to use all capital letters with dashes seperating words. We recommend making the name of an object-group directly related to what access this object-group will grant. For example, if an object-group were to be used to give Walter White SSH access to the web servers, we would recommend you call this object-group WALTERWHITE-WEBSRVS-22. This object-group would then have the web server IP addresses added to it that you would like to give Walter SSH access to. Next, an access-list would be created permitting traffic from Walter's source IP address to the destination of object-group WALTERWHITE-WEBSRVS-22 over TCP port 22.
 
 2. Click the **_Add IP(s)_** button to add IP hosts or subnet ranges to the object-group. 
 
@@ -67,6 +65,8 @@ Navigate to the **_IP Groups_** tab. Click on the **_add group_** button that is
 3. Click the **_Add IP_** button.  
 
 4. Click the **_Save Changes_** button. The Firewall Manager v2 will interact with your firewall and add the configurations. This will typically take 30 seconds, depending on the size of your firewall's configuration.
+
+<!-- IMAGE "FWCPv2 Article 2 Image Add Group" --->
 
 ### Modifying Object-groups
 
@@ -82,6 +82,8 @@ Navigate to the **_IP Groups_** tab. Scroll or search through the object-group l
 
    **Note:** If is highly important that you understand the impact of modifying an object-group. Incorrectly modifying an object-group that is referenced in an access-list has the potential to either creating inappropriate network access or removing critical access. Always ensure that you fully understand the impact of your modification.
 
+<!-- IMAGE "FWCPv2 Article 2 Image Modify" --->
+
 ### Deleting Object-groups
 
 Navigate to the **_IP Groups_** tab. Scroll or search through the object-group list and select the appropriate object-group by clicking on it. The contents of the object-group will automatically display in the next column to the right. You may need to scroll to the top depending on the amount of object-groups configured on your firewall.
@@ -91,3 +93,5 @@ Navigate to the **_IP Groups_** tab. Scroll or search through the object-group l
 2. A ticket will be submitted on your behalf for a Racker to manaually remove the object-group and delete any configuration items that reference the object-group, such as access-lists, VPN encryption domains, or even other object-groups.
 
 3. This ticket will be automatically forward to the appropriate Network Security team. A Racker will perform quality checks and confirm with you directly if anything appears to be incorrect.
+
+<!--- IMAGE"FWCPv2 Article 2 Image Delete" --->
