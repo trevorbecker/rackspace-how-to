@@ -1,7 +1,7 @@
 ---
 permalink: firewall-manager-v2-object-groups/
 audit_date:
-title: Firewall Manager v2 Object-groups
+title: Firewall Manager v2 - Object-groups
 type: product
 created_date: '2017-03-21'
 created_by: Trevor Becker
@@ -29,8 +29,13 @@ With the example above, you can easily see the organizational and readability im
 In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You also now have the ability to view, modify, or delete any object-group on your firewall. In the previous version of the Firewall Manager, the user was restricted to only modifying object-groups that began with the string "FWCP-". In this new version of the Firewall Manager, this restriction has been lifted, which enables you to more powerfully control and modify your environment.
 
 **Location of Object-groups**
+
 1. Log in to the Firewall Manager v2 using the steps in the [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2-beta) "How do I find the Firewall Manager v2 Beta?" section.
 
 2. Select the correct firewall from the list on the left by clicking on it.
 
     If this is the first time you have attempted to modify this firewall, you will need to accept the Firewall User Agreement.
+
+3. Click the **IP Groups** tab on the left drop down menu
+
+<!-- Image IP Groups --->
