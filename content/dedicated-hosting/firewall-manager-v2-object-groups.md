@@ -1,7 +1,7 @@
 ---
 permalink: firewall-manager-v2-object-groups/
 audit_date:
-title: Firewall Manager v2: Object-groups
+title: Firewall Manager v2 Object-groups
 type: product
 created_date: '2017-03-21'
 created_by: Trevor Becker
