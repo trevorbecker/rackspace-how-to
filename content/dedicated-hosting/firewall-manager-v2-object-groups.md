@@ -26,7 +26,7 @@ With the example above, you can easily see the organizational and readability im
 
 ### Object-groups in the Firewall Manager v2
 
-In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You also now have the ability to view, modify, or delete any object-group on your firewall. In the previous version of the Firewall Manager, the user was restricted to only modifying object-groups that began with the string "FWCP-". In this new version of the Firewall Manager, this restriction has been lifted, which enables you to more powerfully control and modify your environment.
+In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You also now have the ability to view, modify, or delete any object-group on your firewall. In the previous version of the Firewall Manager, the user was restricted to only modifying object-groups that began with the string _"FWCP-"_. In this new version of the Firewall Manager, this restriction has been lifted, which enables you to more powerfully control and modify your environment.
 
 **Location of Object-groups**
 
