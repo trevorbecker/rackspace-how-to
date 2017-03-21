@@ -11,20 +11,31 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-<!-- IMAGE 1 -->
+<!-- IMAGE "Logo" -->
 The Firewall Manager v2 BETA is a new tool within the MyRackspace portal. This article describes the tool and also functions as the landing page for all training articles.
 
 ### What is the Firewall Manager?
 
 The Firewall Manager, or also commonly referred to as the Firewall Control Panel (FWCP), is a self-service tool built within the myRackspace portal. The Firewall Manager provides you with the ability to immediately view and make modifications to the configurations of your Cisco firewall(s) by securely connecting to them and executing the change on your behalf. In many cases, the Firewall Manager can be used to execute a change in less time than it take to create a ticket.
 
+### How do I find the Firewall Manager v2 Beta?
+
+1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login).
+
+   You will need your Rackspace account number, as well as your username and password.
+
+2. In the top navigation bar, click **Network**.
+
+3. Next, in the drop down menu, click **Firewall Manager v2 BETA**.
+
+<!--- IMAGE "Dropdown -->
+
 ### Firewall User Agreement
 
 Rackspace requires each customer contact who attempts to use the Firewall Manager to accept the Firewall User Agreement terms. These terms are prompted for each device, every 90 days. Only customer contacts who have edit or admin permissions on firewalls will be permitted to make modifications. When the terms are accepted, a confirmation email will be sent to the customer contact and primary contact. If the customer contact chooses not to accept the terms, that contact will only be able to view their firewall configuration.
 
 **Example 1.1 - Firewall User Agreement Example**
-<!-- IMAGE 2-->
-
+<!-- IMAGE "Firewall User Agreement"-->
 
 ### Firewall Manager v2 Beta
 
