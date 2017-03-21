@@ -34,8 +34,44 @@ In the Firewall Manager v2, object-groups are referred to as **IP Groups**. You 
 
 2. Select the correct firewall from the list on the left by clicking on it.
 
-    If this is the first time you have attempted to modify this firewall, you will need to accept the Firewall User Agreement.
-
-3. Click the **IP Groups** tab on the left drop down menu
+3. Click the **IP Groups** tab on the left drop down menu.
 
 <!-- Image IP Groups --->
+
+### Viewing Object-groups
+
+Once you have navigated to the **_IP Groups_** tab using the steps above, click on the name of the object-group you would like to view. Once you click on the object-group, the contents of the groups expands in the next column to the right. You may need to scroll to the top depending on the amount of object-groups configured on your firewall.
+
+The Firewall Manager v2 organizes the object-groups that exist on your firewall in case-sensitive alphabetical order. This means that object-groups titled in uppercase are displayed before the lowercase object-groups. If you are having a difficult time locating the object-group, perform a find within your browser, and search for the object-group.
+
+The Firewall Manager v2 also now allows you to search through the contents of an object-group. This feature enables you to quickly identify if an IP address or subnet exists within the specified object-group. To use this feature, type an IP address or subnet IP into the search bar that automatically displays in the right column once you click on the object-group to select it.
+
+### Creating Object-groups
+
+Once you have navigated to the **_IP Groups_** tab using the steps above, click on the **_add group_** button that is displayed below the IP Groups title. The Firewall Manager v2 will interactively display the **_Add Group_** page.
+
+1. Type the name of the object-group in the **_Group Name_** field. 
+
+    **Rackspace Naming Scheme Best Practice**
+
+    The Rackspace standard is to use all capital letters with dashes seperating words. We recommend making the name of an object-group directly related to what access this object-group will grant. For example, if an object-group were to be used to give Walter White SSH access to the web servers, we would recommend you call this object-group WALTERWHITE-WEBSRVS-22. This object-group would then have the web server IP addresses added to it that you would like to give Walter SSH access to. Next, an access-list would be created permitting traffic from Walter's source IP address to the destination of object-group WALTERWHITE-WEBSRVS-22 over TCP port 22.
+
+2. Click the **_Add IP(s)_** button to add IP hosts or subnet ranges to the object-group. 
+
+    In the text field, type a single IP address or subnet, or enter a list of IPs or subnets, with each unique item on their own line. 
+    
+    **Note:** The Firewall Manager v2 only permits /24 to /32 subnet sizes. If you require a subnet size larger than a /24, a Racker will need to manaually add this value for you.
+    
+    **Note:** If you need assistance creating a custom subnet range, click the CIDR hyperlink below the text field. The dropdown will interactively change to an input range field. Define the IP range required and click the **_Convert IPs_** button. The Firewall Manager v2 will automatically convert this IP range into the extact CIDR breakdowns required.
+    
+3. Click the **_Add IP_** button.  
+
+4. Click the **_Save Changes_** button. The Firewall Manager v2 will interact with your firewall and add the configurations. This will typically take 30 seconds, depending on the size of your firewall's configuration.
+
+### Modifying Object-groups
+
+
+
+### Deleting Object-groups
+
+
