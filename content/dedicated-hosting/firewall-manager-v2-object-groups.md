@@ -76,7 +76,7 @@ Navigate to the **_IP Groups_** tab. Scroll or search through the object-group l
 
 2. Adding an entry - Click the **_Add IP(s)_** button to add IP hosts or subnet ranges to the object-group. See the notes above in the _Creating Object-groups_ section above.
 
-3. Removing an entry - Click on the minus symbol to the right of the object-group entry.
+3. Removing an entry - Click on the **_minus symbol_** to the right of the object-group entry.
 
 4. Click the **_Save Changes_** button. The Firewall Manager v2 will interact with your firewall and add the configurations. This will typically take 30 seconds, depending on the size of your firewall's configuration.
 
