@@ -92,6 +92,6 @@ Navigate to the **_IP Groups_** tab. Scroll or search through the object-group l
 
 2. A ticket will be submitted on your behalf for a Racker to manaually remove the object-group and delete any configuration items that reference the object-group, such as access-lists, VPN encryption domains, or even other object-groups.
 
-3. This ticket will be automatically forward to the appropriate Network Security team. A Racker will perform quality checks and confirm with you directly if anything appears to be incorrect.
+3. This ticket will be automatically forwarded to the appropriate Network Security team. A Racker will perform quality checks and confirm with you directly if anything appears to be incorrect.
 
 <!--- IMAGE"FWCPv2 Article 2 Image Delete" --->
