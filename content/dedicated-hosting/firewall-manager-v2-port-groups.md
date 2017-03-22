@@ -69,7 +69,7 @@ Navigate to the **_Port Groups_** tab. Click on the **_add group_** button that 
 
 5. Click the **_Save Changes_** button. The Firewall Manager v2 will interact with your firewall and add the configurations. This will typically take one minute or less, depending on the size of your firewall's configuration.
 
-<!-- IMAGE "FWCPv2 Article 2 Image Add Port-group" --->
+<!-- IMAGE "FWCPv2 Article 3 Image Add Port-group" --->
 
 ### Modifying Port-groups
 
