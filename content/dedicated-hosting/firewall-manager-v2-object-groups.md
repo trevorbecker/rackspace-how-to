@@ -72,7 +72,7 @@ Navigate to the **_IP Groups_** tab. Click on the **_add group_** button that is
 
 Navigate to the **_IP Groups_** tab. Scroll or search through the object-group list and select the appropriate object-group by clicking on it. The contents of the object-group will automatically display in the next column to the right. You may need to scroll to the top depending on the amount of object-groups configured on your firewall.
 
-1. Click the **_Edit Group_** button the modify the contents of an object-group.
+1. Click the **_Edit Group_** button to modify the contents of an object-group.
 
 2. Adding an entry - Click the **_Add IP(s)_** button to add IP hosts or subnet ranges to the object-group. See the notes above in the _Creating Object-groups_ section above.
 
