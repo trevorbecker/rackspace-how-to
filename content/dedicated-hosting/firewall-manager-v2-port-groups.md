@@ -73,28 +73,28 @@ Navigate to the **_Port Groups_** tab. Click on the **_add group_** button that 
 
 ### Modifying Port-groups
 
-Navigate to the **_IP Groups_** tab. Scroll or search through the object-group list and select the appropriate object-group by clicking on it. The contents of the object-group will automatically display in the next column to the right. You may need to scroll to the top depending on the amount of object-groups configured on your firewall.
+Navigate to the **_Port Groups_** tab. Scroll or search through the port-group list and select the appropriate port-group by clicking on it. The contents of the port-group will automatically display in the next column to the right. You may need to scroll to the top depending on the amount of port-groups configured on your firewall.
 
-1. Click the **_Edit Group_** button the modify the contents of an object-group.
+1. Click the **_Edit Group_** button to modify the contents of a port-group.
 
-2. Adding an entry - Click the **_Add IP(s)_** button to add IP hosts or subnet ranges to the object-group. See the notes above in the _Creating Object-groups_ section above.
+2. Adding a port entry - Click the **_Add Port(s)_** button to add TCP or UDP ports to the port-group. See the notes above in the _Creating Port-groups_ section above.
 
-3. Removing an entry - Click on the **_minus symbol_** to the right of the object-group entry.
+3. Removing a port entry - Click on the **_minus symbol_** to the right of the port-group entry.
 
 4. Click the **_Save Changes_** button. The Firewall Manager v2 will interact with your firewall and add the configurations. This will typically take 30 seconds, depending on the size of your firewall's configuration.
 
-   **Note:** If is highly important that you understand the impact of modifying an object-group. Incorrectly modifying an object-group that is referenced in an access-list has the potential to either creating inappropriate network access or removing critical access. Always ensure that you fully understand the impact of your modification.
+   **Note:** If is highly important that you understand the impact of modifying an existing port-group. Incorrectly modifying an existing port-group that is already referenced in an access-list has the potential to either creating inappropriate network access or removing critical access. Always ensure that you fully understand the impact of your modification.
 
-<!-- IMAGE "FWCPv2 Article 2 Image Modify" --->
+<!-- IMAGE "FWCPv2 Article 3 Image Modify" --->
 
-### Deleting Object-groups
+### Deleting Port-groups
 
-Navigate to the **_IP Groups_** tab. Scroll or search through the object-group list and select the appropriate object-group by clicking on it. The contents of the object-group will automatically display in the next column to the right. You may need to scroll to the top depending on the amount of object-groups configured on your firewall.
+Navigate to the **_Port Groups_** tab. Scroll or search through the port-group list and select the appropriate port-group by clicking on it. The contents of the port-group will automatically display in the next column to the right. You may need to scroll to the top depending on the amount of port-groups configured on your firewall.
 
-1. Click the **_Delete Group_** button make a request to remove an object-group.
+1. Click the **_Delete Group_** button make a request to remove an port-group.
 
-2. A ticket will be submitted on your behalf for a Racker to manaually remove the object-group and delete any configuration items that reference the object-group, such as access-lists, VPN encryption domains, or even other object-groups.
+2. A ticket will be submitted on your behalf for a Racker to manaually remove the port-group and delete any configuration items that reference the port-group, such as access-lists, VPN encryption domains, or even other port-groups.
 
-3. This ticket will be automatically forward to the appropriate Network Security team. A Racker will perform quality checks and confirm with you directly if anything appears to be incorrect.
+3. This ticket will be automatically forwarded to the appropriate Network Security team. A Racker will perform quality checks and confirm with you directly if anything appears to be incorrect.
 
-<!--- IMAGE"FWCPv2 Article 2 Image Delete" --->
+<!--- IMAGE"FWCPv2 Article 3 Image Delete" --->
