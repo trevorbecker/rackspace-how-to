@@ -22,7 +22,7 @@ Object-groups are used to group like items together, such as IP addresses, ports
 
 ### Why should I use an Object-group?
 
-With the example above, you can easily see the organizational and readability impact object-groups can have on a Cisco firewall's running configuration. Remember, the easier a firewall's configuration is to read and modify, the chances for a misconfiguration are reduced, and the quicker it can be troubleshot when issues arise.
+With the example above, you can easily see the organizational and readability impact object-groups can have on a Cisco firewall's running configuration. Remember, the easier a firewall's running configuration is to read and modify, the chances for a misconfiguration are reduced, and the quicker it can be troubleshot when issues arise.
 
 ### Object-groups in the Firewall Manager v2
 
