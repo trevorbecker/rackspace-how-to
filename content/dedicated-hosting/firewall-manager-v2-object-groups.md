@@ -80,7 +80,7 @@ Navigate to the **_IP Groups_** tab. Scroll or search through the object-group l
 
 4. Click the **_Save Changes_** button. The Firewall Manager v2 will interact with your firewall and add the configurations. This will typically take 30 seconds, depending on the size of your firewall's configuration.
 
-   **Note:** If is highly important that you understand the impact of modifying an object-group. Incorrectly modifying an object-group that is referenced in an access-list has the potential to either creating inappropriate network access or removing critical access. Always ensure that you fully understand the impact of your modification.
+   **Note:** If is highly important that you understand the impact of modifying an object-group. Incorrectly modifying an existing object-group that is already referenced in an access-list has the potential to either creating inappropriate network access or removing critical access. Always ensure that you fully understand the impact of your modification.
 
 <!-- IMAGE "FWCPv2 Article 2 Image Modify" --->
 
