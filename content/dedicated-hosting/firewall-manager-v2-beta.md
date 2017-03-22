@@ -64,6 +64,7 @@ The Firewall Manager v2 is the release for the second version of the existing Fi
 
 ### Firewall Manager v2 Training
 
-This section is our respository for all Firewall Manager v2 training articles. 
+This section is our respository for all Firewall Manager v2 training articles.
 
-   **[Firewall Manager v2 - Object-groups](https://support.rackspace.com/how-to/firewall-manager-v2-object-groups)** 
+- **[Firewall Manager v2 - Object-groups](https://support.rackspace.com/how-to/firewall-manager-v2-object-groups)** 
+- **[Firewall Manager v2 - Port-objects](https://support.rackspace.com/how-to/firewall-manager-v2-port-groups)**
