@@ -35,4 +35,12 @@ An Access Control Entry (ACE) is an individual entry in an Access Control List (
   **Example 1.1:** Example location of the access-list rules in Firewall Manager v2
   <!-- Image "FWCPv2 Article 5 Image Rules" --->
 
+### Access-list Rules
 
+Each environment at Rackspace is unique in its own way. However, there are standards we have implemented in each firewall environment to make some aspects of the access-list configuration uniform.
+
+- **101 ACL**: The 101 access-list is the ACL that is applied to the outside interface for traffic ingressing (coming toward) from the internet. The 101 access-list defines what traffic from the internet is allowed to enter into the environment. The 101 access-list is your Rackspace environment's first line of defense. If traffic is not explicitly permitted on it, traffic is implicitly denied by default.
+
+  **Warning:** The 101 access-list is the gatekeeper for network security to your environment. Do not open more access than is required. The potential for compromise increases as more access is opened. Think of this access-list as a wall in front of your infrastrcuture, as you poke more holes in it with acces-list entries, the higher the potential is for a breach. 
+  
+  **Warning:** Never configure source traffic of any to destination traffic of any over the protocol IP. IP is the entire IP suite
