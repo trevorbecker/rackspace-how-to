@@ -24,17 +24,6 @@ Access control lists, or ACLs, give Cisco firewalls basic traffic filtering capa
 
 An Access Control Entry (ACE) is an individual entry in an Access Control List (ACL). Access Control Entries are referred to as **Rules** in the Firewall Manager v2. The Cisco firewall only allow you to configure one access-list, per interface, per direction. This access-list can be composed of as many ACEs that you need. The Firewall Manager v2 enables you
 
-### Location of access-list rules
-
-1. Access Firewall Manager v2 by following the steps in the [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2) article.
-
-2. In the navigation pane on the left side of the panel, click the firewall for which you want to see the access-lists rules.
-
-3. Click **Rules**
-
-  **Example 1.1:** Example location of the access-list rules in Firewall Manager v2
-  <!-- Image "FWCPv2 Article 5 Image Rules" --->
-
 ### Access-list best practices and recommendations
 
 The security of your Rackspace environment begins at your Cisco firewall. Because of this, misconfigurations in network access policies on your firewall can lead to unwanted network exposure and potential compromise. The integrity and network security of your environment is highly important to Rackspace. 
@@ -50,9 +39,25 @@ The following points are some best practices and recommendations you should alwa
 - Do not globally open up ports (defining source of any over a port) that are not considered a generally accepted best practice. Examples of these ports are, but not limited to, 22 - SSH, 1433 - Microsoft SQL, 3306 MySQL, and 3389 - RDP.
 
 ### Access-list line numbers
+
 execution order, line numbers
 Always be aware of what lies above your access control entry you just added. If you place an entry below a deny that encompasses your target traffic, understand that your new access control entry will never be hit. In situation like this, the use of the line number is required.
 
+### Access-list for DMZs and other back-end segments
+
+It is a best practice when creating multiple segments behind Cisco firewalls, to explicitly deny traffic from lower trusted segments to the higher trusted segment. An example of this would be if a DMZ was created. An access-list entry would need to be created that defined traffic sourcing from the DMZ segment destined to the INSIDE segment to be denied. Any exceptions to this, e.g. Active Directory ports, would be configured above the deny line.
+
+### Location of access-list rules
+
+1. Access Firewall Manager v2 by following the steps in the [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2) article.
+
+2. In the navigation pane on the left side of the panel, click the firewall for which you want to see the access-lists rules.
+
+3. Click **Rules**
+
+  **Example 1.1:** Example location of the access-list rules in Firewall Manager v2
+  <!-- Image "FWCPv2 Article 5 Image Rules" --->
+  
 ### Access-list Rules
 
 Each environment at Rackspace is unique in its own way. However, there are standards we have implemented in each firewall environment to make some aspects of the access-list configuration uniform.
