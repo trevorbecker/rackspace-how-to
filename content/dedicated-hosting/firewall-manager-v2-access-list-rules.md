@@ -46,7 +46,9 @@ A scenario where this is needed is when there is an encompassing deny rule above
 
 ### Access-list for DMZs and other back-end segments
 
-It is a best practice when creating multiple segments behind Cisco firewalls, to explicitly deny traffic from lower trusted segments to the higher trusted segment. An example of this would be if a DMZ was created. An access-list entry would need to be created that defined traffic sourcing from the DMZ segment destined to the INSIDE segment to be denied. Any exceptions to this, e.g. Active Directory ports, would be configured above the deny line.
+A DMZ, or demilitarized zone, is a seperate network segment that is used to physical and logically seperate networks. Our Cisco firewalls use access-lists to perform network access control on DMZs and other back-end segments. It is a best practice when creating multiple segments behind Cisco firewalls to explicitly deny traffic from lower trusted segments to the higher trusted segment. This is considered the generally accepted best practice because it enables your firewall to isolate your inside segment from not only the traffic coming from the internet, but also traffic coming from other segments behind the firewall that lie within your Rackspace environment. 
+
+An example of this is an environment that has a DMZ and INSIDE segment created. An access-list entry would need to be created that denied traffic sourcing from the DMZ segment destined to the INSIDE segment. Any exceptions to this, e.g. Active Directory ports, would be configured above the deny line. This technique allows you to deny all traffic by default and then specify individual access required as you find business needs for resources in the two segments to communicate.
 
 ### Location of access-list rules
 
