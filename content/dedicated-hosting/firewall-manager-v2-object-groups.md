@@ -38,7 +38,7 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can no
 
 3. Under **Rules** in the navigation pane, click **IP Groups**.
 
-<!-- Image "FWCPv2 Article 2 Image IP Group" --->
+    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/ip-groups.png %}" />
 
 4. Scroll through or search the object-group list and click the appropriate object-group. The contents of the object-group are automatically displayed.
 
@@ -52,25 +52,26 @@ You can also search the contents of an object-group. This feature enables you to
 
 2. Under the **IP Groups** label, click **Add Group**. The **Add Group** page is displayed.
 
+    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/add-object-group.png %}" />
+
 3. In the **Group Name** field, type the name of the object-group.
 
-   We recommend using a name that directly relates to the access that this object-group will grant. We also recommend using all uppercase letters with dashes separating word groups. For example, if an object-group will be used to give John Doe SSH access to the web servers over TCP port 22, you might name the object-group JOHNDOE-WEBSRVS-22.
+    We recommend using a name that directly relates to the access that this object-group will grant. We also recommend using all uppercase letters with dashes separating word groups. For example, if an object-group will be used to give John Doe SSH access to the web servers over TCP port 22, you might name the object-group JOHNDOE-WEBSRVS-22.
 
 4. To add IP hosts or subnet ranges to the group, click **Add IP(s)**.
 
 5. In the text field, type a single IP address or subnet, or enter a list of IP addresses or subnets, with each unique item on its own line.
 
-   If you need help creating a custom subnet range, click the CIDR link under the text field. The drop-down changes to an input range field. Define the IP range required and click **Convert IPs**. Firewall Manager v2 converts the IP range into the exact CIDR values required.
+    If you need help creating a custom subnet range, click the CIDR link under the text field. The drop-down changes to an input range field. Define the IP range required and click **Convert IPs**. Firewall Manager v2 converts the IP range into the exact CIDR values required.
 
-   **Note:** Firewall Manager v2 permits only /24 to /32 subnet sizes. If you require a subnet size larger than /24, contact Support to manually add this value for you.
+    **Note:** Firewall Manager v2 permits only /24 to /32 subnet sizes. If you require a subnet size larger than /24, contact Support to manually add this value for you.
 
 6. Click **Add IP**.
 
 7. Click **Save Changes**.
 
-   Firewall Manager v2 interacts with your firewall and adds the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
+    Firewall Manager v2 interacts with your firewall and adds the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
 
-<!-- IMAGE "FWCPv2 Article 2 Image Add Group" --->
 
 ### Modify an object-group
 
@@ -83,15 +84,14 @@ It’s highly important that you understand the impact of modifying an object-gr
 3. Click **Edit Group**.
 
 4. To add an entry, click **Add IP(s)** and add IP hosts or subnet ranges to the group. For instructions, see the “Create an object-group” section.
-<!-- IMAGE "FWCPv2 Article 2 Image Modify" --->
+
+   <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/modify-object-group.png %}" />
 
 5. To remove an entry, click on the minus (-) symbol to the right of the object-group entry.
 
 6. Click **Save Changes**.
 
-   <!-- IMAGE "FWCPv2 Article 2 Image Modify" --->
-
-   Firewall Manager v2 interacts with your firewall and modifies the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
+Firewall Manager v2 interacts with your firewall and modifies the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
 
 ### Delete an object-groups
 
@@ -103,7 +103,7 @@ It’s highly important that you understand the impact of modifying an object-gr
 
 4. Enter any additional information in the text box, and then click **Submit Ticket**.
 
+    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/delete-object-group.png %}" />
+
 A ticket is submitted on your behalf to manually remove the object-group and
 delete any configuration items that reference the group, such as access lists, VPN encryption domains, or even other object-groups. The ticket is automatically forwarded to the appropriate Network Security team, and a team member will perform quality checks and confirm with you directly if anything appears to be incorrect.
-
-<!--- IMAGE"FWCPv2 Article 2 Image Delete" --->
