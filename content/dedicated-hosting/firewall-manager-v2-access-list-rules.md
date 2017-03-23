@@ -32,16 +32,17 @@ The following points are some best practices and recommendations you should alwa
 
 - Always minimize the size of the source and destination traffic in your access-list entry when possible. Be as specific as possible. Do not define the destination as any (your entire Rackspace environment) when only one destination server needs to be accessed.
 
-- Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. (permit ip any any, permit tcp any any, or permit udp any any) This will effective turn your security platform into a switch, as it will not block any packets to your entire environment over those protocols.
+- Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. (**permit ip any any**, **permit tcp any any**, or **permit udp any any**) This will effective turn your security platform into a switch, as it will not block any packets to your entire environment over those protocols.
 
-- Do not allow all traffic to a destination or group of destinations. (permit ip any [host], or permit ip any [object-group])
+- Do not allow all traffic to a destination or group of destinations. (**permit ip any [host]**, or **permit ip any [object-group]**)
 
-- Do not globally open up ports (defining source of any over a port) that are not considered a generally accepted best practice. Examples of these ports are, but not limited to, 22 - SSH, 1433 - Microsoft SQL, 3306 MySQL, and 3389 - RDP.
+- Do not globally open up ports (defining source of any over a port) that are not considered a generally accepted best practice. Examples of these ports are, but not limited to **22 - SSH**, **1433 - Microsoft SQL**, **3306 - MySQL**, and **3389 - RDP**.
 
 ### Access-list line numbers
 
-execution order, line numbers
-Always be aware of what lies above your access control entry you just added. If you place an entry below a deny that encompasses your target traffic, understand that your new access control entry will never be hit. In situation like this, the use of the line number is required.
+Cisco firewalls uses line numbers appended to access control entries to identify the execution order of the access-list. When a new access-list rule is created in the Firewall Manager v2, it uses the Cisco default action and automatically appends the line to the bottom of the access-list. Depending on the content of the access-list, this default action may or may not be what you are intending to configure. It is common to have the need to place an access-list rule in a customized location within the access-list.
+
+A scenario where this is needed is when there is an encompassing deny rule above the newly created rule. This would prevent the new rule from ever triggering. Remember, traffic processed by the Cisco ASA is performed by first match, from top down within the access-list applied to the interface. Once a connection that is being inspected matches on an access control entry, the processing for that lookup is ended. Also keep in mind that there is an implicit deny all at the bottom of each access control list. What that means is Cisco firewalls operate using a fail close approach. If traffic is not explicitly permitted, then it is implicitly denied.
 
 ### Access-list for DMZs and other back-end segments
 
