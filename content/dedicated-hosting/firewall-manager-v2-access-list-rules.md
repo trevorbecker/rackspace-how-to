@@ -35,12 +35,29 @@ An Access Control Entry (ACE) is an individual entry in an Access Control List (
   **Example 1.1:** Example location of the access-list rules in Firewall Manager v2
   <!-- Image "FWCPv2 Article 5 Image Rules" --->
 
+### Access-list best practices and recommendations
+
+The security of your Rackspace environment begins at your Cisco firewall. Because of this, misconfigurations in network access policies on your firewall can lead to unwanted network exposure and potential compromise. The integrity and network security of your environment is highly important to Rackspace. 
+
+The following points are some best practices and recommendations you should always follow in order to remain secure and not break any compliances you may need to follow. 
+
+- Always minimize the size of the source and destination traffic in your access-list entry when possible. Be as specific as possible. Do not define the destination as any (your entire Rackspace environment) when only one destination server needs to be accessed.
+
+- Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. (permit ip any any, permit tcp any any, or permit udp any any) This will effective turn your security platform into a switch, as it will not block any packets to your entire environment over those protocols.
+
+- Do not allow all traffic to a destination or group of destinations. (permit ip any [host], or permit ip any [object-group])
+
+- Do not globally open up ports (defining source of any over a port) that are not considered a generally accepted best practice. Examples of these ports are, but not limited to, 22 - SSH, 1433 - Microsoft SQL, 3306 MySQL, and 3389 - RDP.
+
+### Access-list line numbers
+execution order, line numbers
+Always be aware of what lies above your access control entry you just added. If you place an entry below a deny that encompasses your target traffic, understand that your new access control entry will never be hit. In situation like this, the use of the line number is required.
+
 ### Access-list Rules
 
 Each environment at Rackspace is unique in its own way. However, there are standards we have implemented in each firewall environment to make some aspects of the access-list configuration uniform.
 
 - **101 ACL**: The 101 access-list is the ACL that is applied to the outside interface for traffic ingressing (coming toward) from the internet. The 101 access-list defines what traffic from the internet is allowed to enter into the environment. The 101 access-list is your Rackspace environment's first line of defense. If traffic is not explicitly permitted on it, traffic is implicitly denied by default.
 
-  **Warning:** The 101 access-list is the gatekeeper for network security to your environment. Do not open more access than is required. The potential for compromise increases as more access is opened. Think of this access-list as a wall in front of your infrastrcuture, as you poke more holes in it with acces-list entries, the higher the potential is for a breach. 
-  
-  **Warning:** Never configure source traffic of any to destination traffic of any over the protocol IP. IP is the entire IP suite
+  **Warning:** The 101 access-list is the gatekeeper for network security to your environment. Do not open more access than is required. 
+ 
