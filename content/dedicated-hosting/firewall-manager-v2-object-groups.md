@@ -1,12 +1,12 @@
 ---
 permalink: firewall-manager-v2-object-groups/
-audit_date:
+audit_date: '2017-03-23'
 title: Firewall Manager v2 Object-groups
 type: product
 created_date: '2017-03-21'
 created_by: Trevor Becker
-last_modified_date: '2017-03-21'
-last_modified_by: Trevor Becker
+last_modified_date: '2017-03-23'
+last_modified_by: Nate Archer
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -64,13 +64,13 @@ You can also search the contents of an object-group. This feature enables you to
 
     If you need help creating a custom subnet range, click the CIDR link under the text field. The drop-down changes to an input range field. Define the IP range required and click **Convert IPs**. Firewall Manager v2 converts the IP range into the exact CIDR values required.
 
-    **Note:** Firewall Manager v2 permits only /24 to /32 subnet sizes. If you require a subnet size larger than /24, contact Support to manually add this value for you.
+    **Note:** Firewall Manager v2 permits only `/24` to `/32` subnet sizes. If you require a subnet size larger than `/24`, contact Support to manually add this value for you.
 
 6. Click **Add IP**.
 
 7. Click **Save Changes**.
 
-    Firewall Manager v2 interacts with your firewall and adds the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
+Firewall Manager v2 interacts with your firewall and adds the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
 
 
 ### Modify an object-group
@@ -93,7 +93,7 @@ It’s highly important that you understand the impact of modifying an object-gr
 
 Firewall Manager v2 interacts with your firewall and modifies the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
 
-### Delete an object-groups
+### Delete an object-group
 
 1. Navigate to the **IP Groups** tab.
 
