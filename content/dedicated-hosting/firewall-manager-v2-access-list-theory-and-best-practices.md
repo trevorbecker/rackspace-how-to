@@ -35,7 +35,7 @@ The following points are some best practices and recommendations you should alwa
 
 - Always minimize the size of the source and destination traffic in your access-list entry when possible. Be as specific as possible. Do not define the destination as any (your entire Rackspace environment) when only one destination server needs to be accessed.
 
-- Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. (**permit ip any any**, **permit tcp any any**, or **permit udp any any**) This will effective turn your security platform into a switch, as it will not block any packets to your entire environment over those protocols.
+- Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. (**permit ip any any**, **permit tcp any any**, or **permit udp any any**) This will effective turn your security platform into a router, as it will not block any packets to your entire environment over those protocols.
 
 - Do not allow all traffic to a destination or group of destinations. (**permit ip any [host]**, or **permit ip any [object-group]**)
 
