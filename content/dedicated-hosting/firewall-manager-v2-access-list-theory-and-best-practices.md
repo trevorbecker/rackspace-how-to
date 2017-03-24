@@ -11,9 +11,9 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes Access Control List (ACL) theory and best practices. These concepts are the pre-requisite knowledge you should have before modifing your environment's access-list rules in Firewall Manager v2.
+This article describes Access Control List (ACL) theory and best practices. These concepts are the pre-requisite knowledge you should have before modifing your environment's access-list rules in Firewall Manager v2.
 
-To learn more about the tool, see [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2).
+Firewall Manager v2 is a new tool within the MyRackspace portal. To learn more about the tool, see [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2).
 
 ### Firewall Manager v2 access-list process
 
@@ -72,6 +72,8 @@ Each environment at Rackspace is unique in its own way. However, there are stand
 - **CLIENTVPN** or **ANYCONNECT-VPN** or **103 ACL** - This is the ACL dedicated to your AnyConnect or IPSec client VPN's access. It is possible to have a 2nd ACL applied to individual access further filtering this VPN traffic.
 
 - **RackConnect ACL** - This ACL is dedicated to your RackConnectv2 configuration. RackConnectv2 ACL updates can only occur through the Network Policies section of the RackConnectv2 portal. Currenly, the Firewall Manager v2 does not permit access control entries that contain the RackConnect subnet ranges of 10.76.0.0/12 or 10.208.0.0/12.
+
+- **300** or **PNAT ACL** - This is dedicated to policy NAT ACLs on pre-8.3 software.
 
 - **CLOUD-PAT ACL** - This line is used to PAT (Port Address Translation) your cloud servers environment.
 
