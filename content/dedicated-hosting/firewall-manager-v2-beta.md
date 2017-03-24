@@ -69,3 +69,5 @@ This section is our respository for all Firewall Manager v2 training articles.
 - **[Firewall Manager v2 - Object-groups](https://support.rackspace.com/how-to/firewall-manager-v2-object-groups)** 
 - **[Firewall Manager v2 - Port-objects](https://support.rackspace.com/how-to/firewall-manager-v2-port-groups)**
 - **[Firewall Manager v2 - Change log](https://support.rackspace.com/how-to/firewall-manager-v2-change-log)**
+- **[Firewall Manager v2 - Access-list theory and Best Practices](https://support.rackspace.com/how-to/firewall-manager-v2-access-list-theory-and-best-practices)**
+- **[Firewall Manager v2 - Access-list Rules](https://support.rackspace.com/how-to/firewall-manager-v2-access-list-rules)**
