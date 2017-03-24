@@ -1,7 +1,7 @@
 ---
-permalink: firewall-manager-v2-access-list-rules./
+permalink: firewall-manager-v2-access-list-theory-and-best-practices/
 audit_date:
-title: Firewall Manager v2 - Access-list rules
+title: Firewall Manager v2 - Access-list theory and best practices
 type: product
 created_date: '2017-03-23'
 created_by: Trevor Becker
