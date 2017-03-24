@@ -11,10 +11,13 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-<!-- IMAGE "FWCPv2 Article 5 Image Logo" -->
-Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes the Access Control List (ACL) rule feature within this tool. 
+Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes Access Control List (ACL) theory and best practices. These concepts are the pre-requisite knowledge you should have before modifing your environment's access-list rules in Firewall Manager v2.
 
 To learn more about the tool, see [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2).
+
+### Firewall Manager v2 access-list process
+
+To learn more about the access-list process, see [Firewall Manager v2 - Access-list Rules](https://support.rackspace.com/how-to/firewall-manager-v2-access-list-rules).
 
 ### What is an Access Control List?
 
@@ -50,22 +53,26 @@ A DMZ, or demilitarized zone, is a seperate network segment that is used to phys
 
 An example of this is an environment that has a DMZ and INSIDE segment created. An access-list entry would need to be created that denied traffic sourcing from the DMZ segment destined to the INSIDE segment. Any exceptions to this, e.g. Active Directory ports, would be configured above the deny line. This technique allows you to deny all traffic by default and then specify individual access required as you find business needs for resources in the two segments to communicate.
 
-### Location of access-list rules
-
-1. Access Firewall Manager v2 by following the steps in the [Firewall Manager v2](https://support.rackspace.com/how-to/firewall-manager-v2) article.
-
-2. In the navigation pane on the left side of the panel, click the firewall for which you want to see the access-lists rules.
-
-3. Click **Rules**
-
-  **Example 1.1:** Example location of the access-list rules in Firewall Manager v2
-  <!-- Image "FWCPv2 Article 5 Image Rules" --->
-  
 ### Access-list Rules
 
 Each environment at Rackspace is unique in its own way. However, there are standards we have implemented in each firewall environment to make some aspects of the access-list configuration uniform.
 
 - **101 ACL**: The 101 access-list is the ACL that is applied to the outside interface for traffic ingressing (coming toward) from the internet. The 101 access-list defines what traffic from the internet is allowed to enter into the environment. The 101 access-list is your Rackspace environment's first line of defense. If traffic is not explicitly permitted on it, traffic is implicitly denied by default.
 
-  **Warning:** The 101 access-list is the gatekeeper for network security to your environment. Do not open more access than is required. 
- 
+    **Warning:** The 101 access-list is the gatekeeper for the network security of your environment. Do not open more access than is required. See the _Best Practices_ section above for details.
+  
+ -  **100** or **inside** or **FW-INSIDE ACL** - The name of this ACL is less standardized. Even though there are a few variations of the name, the purpose is however completely standardized. This access-list is applied to the inside segment for ingressing traffic. This means that this access-list is applied for traffic sourcing from the inside segment (Your Rackspace servers) destined to anything, whether it is the internet or another segment in your environment. The default for this access-list is permit ip any any. This gives your Rackspace servers unfiltered outbound communication, but only if the traffic is initiated by your Rackspace server. This is useful when servers need to communicate outbound for software updates. It is always a Rackspace recommendation that you lockdown the outbound filtering when possible. If you would like to do that, please make a Rackspace support request and mention this portion of the article.
+
+-  **200 and up ACLs** - The Rackspace standard for site to site VPNs is to use a crypto map ACL name starting at 200. Each site to site VPN configuration will increment by 1 from there. Be cautious if you update a VPN ACL. Because the firewall's crypto engine uses this ACl as its means to build the encryption domains and
+
+- **FW-DMZ-SVRS** or **DMZ** or **99 ACL** - This is the ACL dedicated to your DMZ segment. If you have a DMZ, there needs to always be a deny statement preventing the DMZ from communicating the the INSIDE segment. The deny statement prevents intersegment communication. If intersegment communication is required, you will need to create a permit access-list rule and move it to above the encompassing deny statement.
+
+- **nonat** or **102 ACL** - This ACL is dedicated to NAT bypass, or the feature called NAT0. This is used in Cisco firewall code versions below 8.3. On code versions below 8.3, pur Cisco firewalls are configured to _force_ the firewall the NAT a packet when it moves from one interface to another. Occasionally though, you may not want this. An example is when two internal segments are communicating with each other or VPN traffic. If your firewall is on a code version higher than 8.3, this NAT bypass ACL is no longer needed and can be removed. This syntax is likely the remnants of unused configuration after a mass code upgrade.
+
+- **CLIENTVPN** or **ANYCONNECT-VPN** or **103 ACL** - This is the ACL dedicated to your AnyConnect or IPSec client VPN's access. It is possible to have a 2nd ACL applied to individual access further filtering this VPN traffic.
+
+- **RackConnect ACL** - This ACL is dedicated to your RackConnectv2 configuration. RackConnectv2 ACL updates can only occur through the Network Policies section of the RackConnectv2 portal. Currenly, the Firewall Manager v2 does not permit access control entries that contain the RackConnect subnet ranges of 10.76.0.0/12 or 10.208.0.0/12.
+
+- **CLOUD-PAT ACL** - This line is used to PAT (Port Address Translation) your cloud servers environment.
+
+- **"cap"-in "cap"-out ACLs** - These "cap" variation ACLs are used for setting up captures on the firewall. This is typically used as a tool to assist with troubleshooting. Our best practice is to remove these when troubleshooting is complete so whe can keep your configuration clean. These are safe to remove if you see one left behind. 
