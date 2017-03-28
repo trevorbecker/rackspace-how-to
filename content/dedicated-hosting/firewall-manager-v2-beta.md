@@ -15,7 +15,7 @@ Firewall Manager v2 is a new tool within the MyRackspace portal. This article de
 
 ### What is Firewall Manager?
 
-Firewall Manager, or also commonly referred to as the Firewall Control Panel (FWCP), is a self-service tool in the MyRackspace portal. Firewall Manager enables you to immediately view and modify the configurations of your Cisco firewalls by securely connecting to them and executing the changes on your behalf. In many cases, you can use Firewall Manager to execute a change in less time than it takes to create a ticket.
+Firewall Manager, commonly referred to as the Firewall Control Panel (FWCP), is a self-service tool in the MyRackspace portal. Firewall Manager enables you to immediately view and modify the configurations of your Cisco firewalls by securely connecting to them and executing the changes on your behalf. In many cases, you can use Firewall Manager to execute a change in less time than it takes to create a ticket.
 
 ### How do I find the Firewall Manager v2?
 
