@@ -17,22 +17,22 @@ Details on the Reboot Button are located here: [https://support.rackspace.com/ho
 
 ### Scheduling a Net Device Reboot
 
-Select the **_Products_** tab from the home page and then select **_Devices_**.
+Select the **Products** tab from the home page and then select **Devices**.
 
 
-Next, on the **_Devices_** page, click the **_cog action icon_** to the left of the network device to be rebooted. Select the **_Schedule Reboot_** option.
+Next, on the **Devices** page, click the **cog action icon** to the left of the network device to be rebooted. Select the **Schedule Reboot** option.
 
-On the **_Schedule Reboot_** page, fill in a **_Reason_** for your reboot. Next, select the **_Date / Time_** and select the Net Device(s) to be scheduled for a reboot. These are required fields to proceed. Once each of these variables are filled, the **_Schedule Reboot_** button will activate and allow you to press it.
+On the **Schedule Reboot** page, fill in a **Reason** for your reboot. Next, select the **Date / Time** and select the Net Device(s) to be scheduled for a reboot. These are required fields to proceed. Once each of these variables are filled, the **Schedule Reboot** button will activate and allow you to press it.
 
-After clicking the **_Schedule Reboot_** button, the next page displays a list of devices that will be impacted by the reboot. To proceed with scheduling the Net Device reboot, select **_Confirm Reboot(s)_**, and then select **_OK_** on the following warning confirmation screen.
+After clicking the **Schedule Reboot** button, the next page displays a list of devices that will be impacted by the reboot. To proceed with scheduling the Net Device reboot, select **Confirm Reboot(s)**, and then select **OK** on the following warning confirmation screen.
 
-After the confirmation button are clicked, you will receive a **_Reboot(s) successfully scheduled_** notification message at the top of the panel.
+After the confirmation button are clicked, you will receive a **Reboot(s) successfully scheduled** notification message at the top of the panel.
 
-Select the **_Firewall / LB Reboots_** tab to see details on scheduled reboots. If required, select the **_Edit / Cancel_** options on the right to modify an entry.
+Select the **Firewall / LB Reboots** tab to see details on scheduled reboots. If required, select the **Edit / Cancel** options on the right to modify an entry.
 
 ### Editing a Scheduled Net Device Reboot
 
-From the **_Firewall / LB Reboots_** tab select the **_Edit_** option to the right of the scheduled Net Device reboot entry. Select a new time and date on the window that comes up. Click **_Save_** and **_OK_** on the following windows to make the modification.
+From the **Firewall / LB Reboots** tab select the **Edit** option to the right of the scheduled Net Device reboot entry. Select a new time and date on the window that comes up. Click **Save** and **OK** on the following windows to make the modification.
 
 
 
