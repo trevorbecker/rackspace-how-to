@@ -27,7 +27,7 @@ The **Delete contact** ticket template can be used to not only remove a user fro
 
 3. On the **Create New Ticket** page, click the **Subject** text field, and in the drop down menu, select **Delete Contact**.
 
-   <IMAGE "VPN-USER-DELETE-1" sent in email sen to how-to@rackspace.com on 10-17-2017>
+   <IMAGE "VPN-USER-DELETE-1" sent in email sen to how-to@rackspace.com on 10-18-2017>
 
 4. Complete the following fields:
 
@@ -39,7 +39,7 @@ The **Delete contact** ticket template can be used to not only remove a user fro
 
 5. Click Create Ticket
    
-   <IMAGE "VPN-USER-DELETE-2" sent in email sen to how-to@rackspace.com on 10-17-2017>
+   <IMAGE "VPN-USER-DELETE-2" sent in email sen to how-to@rackspace.com on 10-18-2017>
 
 ### Remove VPN User Process
 
@@ -55,4 +55,4 @@ The **Delete contact** ticket template can be used to not only remove a user fro
 
 5. Here is an example of the automated comment
 
-   <IMAGE "VPN-USER-DELETE-3" sent in email sen to how-to@rackspace.com on 10-17-2017>
+   <IMAGE "VPN-USER-DELETE-3" sent in email sen to how-to@rackspace.com on 10-18-2017>
