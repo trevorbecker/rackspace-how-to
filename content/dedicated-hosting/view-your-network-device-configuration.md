@@ -1,11 +1,11 @@
 ---
 permalink: view-your-network-device-configuration/
-audit_date: 
+audit_date: '2017-01-08'
 title: View your network device's configuration
 type: article
 created_date: '2017-12-21'
 created_by: Trevor Becker
-last_modified_date: '2017-01-06'
+last_modified_date: '2017-01-08'
 last_modified_by: Nate Archer
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -27,7 +27,7 @@ The MyRackspace portal contains a self-service feature that enables you to downl
 
    <IMAGE 2 FROM EMAIL ON 12-21-2017>
 
-4. Click **Download Network Config**.
+4. Click **Download Network Config...**.
 
    The length of the download depends on the size of your network device's configuration. After the download is complete, the configuration is located your browser's download folder as a **.txt** file. 
    
