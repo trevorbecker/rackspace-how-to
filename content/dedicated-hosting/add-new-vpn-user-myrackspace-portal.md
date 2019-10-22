@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Adding new client VPN users is now an automated task within the MyRackspace Portal. This article describes how to add a new VPN using a ticket template.
+Adding new client VPN users is now an automated task within the MyRackspace Portal. This article describes how to add a new VPN user using a ticket template.
 
 ### Create a ticket in the MyRackspace Portal
 
