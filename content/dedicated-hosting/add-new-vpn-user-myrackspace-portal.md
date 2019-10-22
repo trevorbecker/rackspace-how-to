@@ -51,6 +51,8 @@ Adding new client VPN users is now an automated task within the MyRackspace Port
 
 10. Retrieve the password for your new VPN user by opening the ticket. The password is in the most recent comment.
 
+   <IMAGE #2 SENT IN EMAIL TO CAT LOOKABAUGH ON 10-22-2019>
+
 ### Limitations
 
 VPN user automation currently does not allow for the following modifications:
